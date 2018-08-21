@@ -9,8 +9,6 @@ I don't know what the network feels like, but I do know that it works.
 
 All routers, including the frame relay switch, were configured by me from scratch. 
 
-Network diagram is saved as topology.jpg in the master directory.
-
 ------------------------------------------------------------------------------------
 
 Upcoming Features:
@@ -19,7 +17,12 @@ Upcoming Features:
   
   DMVPN
   
----------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------
+ Network diagram is saved as topology.jpg in the master directory.
+ 
+ All non-private IP addresses were made up by me. Any association with a real world IP address is purely coincidental.
+ 
+ -------------------------------------------------------------------------------------------
  
  Fun facts:
  
