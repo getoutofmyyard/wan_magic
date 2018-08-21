@@ -9,7 +9,7 @@ Notable Features:
   OSPF and EIGRP operations, redistribution, and route manipulation;
   OSPF over frame relay (including frame relay switch configuration on a Cisco router);
   OSPF virtual link;
-  IPsec hub-and-spoke configuration (static)
+  IPsec hub-and-spoke configuration over NAT
 
 Upcoming Features:
   Gateway redundancy with HSRP and dual-homed ISP connections;
