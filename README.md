@@ -1,36 +1,37 @@
 # wan_magic
-This is a fun WAN topology that I put together over a weekend. I hope that it serves as a useful
-guideline for certain types of configurations in Cisco IOS.
+This is a wide area network that I put together over a weekend. It is a work in progress.
 
-My goal was to design a funky network that would test my skills. Fortunately, everything works.
+My goal was to design an unwieldy network with various oddball requirements. I wanted it to feel 
+like a network that had been taken apart and cobbled back together over the years. More importantly, I
+wanted it to work.
 
---------------------------------------------------------------
-Here are some present and upcoming features of this topology:
+I don't know what the network feels like, but I do know that it works.
 
-Notable Features:
-  OSPF and EIGRP operations, redistribution, and route manipulation;
-  OSPF over frame relay (including frame relay switch configuration on a Cisco router);
-  OSPF virtual link;
-  IPsec hub-and-spoke configuration over NAT
+All routers, including the frame relay switch, were configured by me from scratch. 
+
+------------------------------------------------------------------------------------
 
 Upcoming Features:
+
   Gateway redundancy with HSRP and dual-homed ISP connections;
+  
   DMVPN
   
- ------------------------------------------------------------
- 
- If you would like to toy around with this network, download the GNS3 project file in this repository, import the configuration
- files for each respective node, and have fun! I used Cisco IOS 15.2(4)S5 for all routers.
- 
+---------------------------------------------------------------------------------------
  
  Fun facts:
  
  Houston-HQ is an IPSec hub. All branches are spokes. i.e. Houston-HQ LANs can ping all other LANs via IPSec, and vice versa.
- IPSec actually works.
- So does OSPF over frame relay.
- ISP-Oklahoma is the hub of the frame relay topology and DR of area 2.
- ISP-Internal1 and ISP-Internal2 are redistributing OSPF and EIGRP.
- NAT is running on all routers except ISP-Internal1 and ISP-Internal2.
+ 
+ OSPF area 2 is running over frame relay. ISP-Oklahoma is the DR of area 2 and the frame relay hub.
+ 
+ Area 2 is tethered to area 0 with a virtual link.
+ 
+ ISP-Internal-1 and ISP-Internal-2 are redistributing OSPF and EIGRP. Plenty of route maps.
+ 
+ ISPs usually don't have 1544 Kb/s serial links in their core. Also, they usually own more than four routers.
+ 
+ You'll need to run "ip dhcp" on the virtual workstations and let them acquire an IP address before they can ping.
  
  
  
