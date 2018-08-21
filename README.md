@@ -25,11 +25,12 @@ Upcoming Features:
  
  Fun facts:
  
- Houston-Branch is an IPSec hub. All branches are spokes.
- ISP-Oklahoma is the hub of the frame relay topology and DR of area 2
- ISP-Internal1 and ISP-Internal2 are ASBRs; check out the route maps
- Houston-Branch LANs can ping all other LANs via IPSec
- NAT is running on all routers except ISP-Internal1 and ISP-Internal2
+ Houston-HQ is an IPSec hub. All branches are spokes. i.e. Houston-HQ LANs can ping all other LANs via IPSec, and vice versa.
+ IPSec actually works.
+ So does OSPF over frame relay.
+ ISP-Oklahoma is the hub of the frame relay topology and DR of area 2.
+ ISP-Internal1 and ISP-Internal2 are redistributing OSPF and EIGRP.
+ NAT is running on all routers except ISP-Internal1 and ISP-Internal2.
  
  
  
