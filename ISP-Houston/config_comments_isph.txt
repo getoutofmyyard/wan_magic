@@ -1,0 +1,80 @@
+ISP-Houston#show run
+Building configuration...
+
+Current configuration : 2254 bytes
+!
+! Last configuration change at 13:21:39 UTC Mon Aug 20 2018
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname ISP-Houston
+!
+boot-start-marker
+boot-end-marker
+!
+ip tcp synwait-time 5
+!
+!
+!
+!
+!
+interface GigabitEthernet1/0                               #Gateway for Houston-HQ. EIGRP timers modified to reduce overhead.
+ ip address 70.164.65.66 255.255.255.252
+ ip nat outside
+ ip hello-interval eigrp 100 30
+ ip hold-time eigrp 100 60
+ negotiation auto
+!
+!
+interface Serial2/1
+ ip address 10.0.0.1 255.255.255.252
+ ip nat inside
+ ip hello-interval eigrp 100 30
+ ip hold-time eigrp 100 60
+ serial restart-delay 0
+!
+interface Serial2/2                                        #Delay set to 99999 to force Serial2/2 into EIGRP feasible successor state.
+ ip address 10.0.0.5 255.255.255.252                       #This prevents load balancing in favor of failover convergence. The "delay"
+ ip nat inside                                             #value only affects EIGRP metrics and does not affect bandwidth.
+ ip hello-interval eigrp 100 30
+ ip hold-time eigrp 100 60
+ delay 99999
+ serial restart-delay 0
+!
+!
+!
+router eigrp 100                                                       #EIGRP ASN 100 configuration. Distribution list 25 blocks 
+ distribute-list 25 out GigabitEthernet1/0                             #private ISP subnets from being advertised by EIGRP. Refers
+ network 10.0.0.0 0.0.0.3                                              #to ACL 25.
+ network 10.0.0.4 0.0.0.3
+ network 70.164.65.64 0.0.0.3
+!
+!
+ip nat pool overload 70.164.65.66 70.164.65.66 prefix-length 30        #Creates a NAT pool named "overload" and specifies 
+!                                                                      #ISP-Houston's public IP address as its only entry.
+!                                                                      #This is used when NAT'ing from multiple internal IPs
+!                                                                      #to one public IP (PAT).
+!
+!                                                                
+!
+ip nat inside source list 10 pool overload overload                    #Basic NAT configuration. Specifies ACL 10 when matching          
+!                                                                      #addresses to translate. Instead of specifying an outgoing                                                           
+!											                           #interface directly, I specified it indirectly through the 
+!                                                                      #NAT pool I created earlier ("overload"). This is necessary
+!                                                                      #because IOS won't support multiple NAT statements for a
+!                                                                      #single outbound interface. The "overload" command (after
+!                                                                      #the pool named "overload" is specified) configures NAT to
+!                                                                      #use port address translation instead of 1to1 or dynamic NAT.
+!
+!
+!
+!
+access-list 10 permit 10.0.0.0 0.0.0.255                               #Matches addresses for NAT to translate                            
+!
+access-list 25 deny   10.0.0.0 0.0.0.255                               #Matches addresses for EIGRP distribution list 25
+!
+!
+!
+end

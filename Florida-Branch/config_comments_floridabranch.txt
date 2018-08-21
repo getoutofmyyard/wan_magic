@@ -1,0 +1,108 @@
+Florida-Branch#show run
+Building configuration...
+
+Current configuration : 2971 bytes
+!
+! Last configuration change at 13:31:30 UTC Mon Aug 20 2018
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname Florida-Branch
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+ip dhcp pool FLORIDA                      #Router configured to serve DHCP requests on FastEthernet0/1
+ network 172.16.1.0 255.255.255.0
+ default-router 172.16.1.1
+ domain-name florida.local
+!
+!
+!
+!
+!
+!
+!
+!
+crypto isakmp policy 1                    #Sets IKE phase 1 policy. Default encryption is used (DES)
+ hash md5                                 #and Diffie-Hellman group is set to 2. PSK is chosen auth.
+ authentication pre-share
+ group 2
+!
+crypto isakmp key password address 70.164.65.65                     #Defines PSK and peer IP address
+!
+!
+crypto ipsec transform-set transformset esp-des esp-md5-hmac        #Defines IPSec transform set named "transformset"
+ mode tunnel                                                        # for phase 2 negotiations. I chose DES and MD5
+!                                                                   #to minimize overhead on my PC.
+!
+!
+crypto map map 1 ipsec-isakmp                                       #Crypto map which points to the ISAKMP/IPSec policies
+ set peer 70.164.65.65                                              #above. Sets peer IP, transform set, and ACL to match
+ set transform-set transformset                                     #traffic to be encrypted.
+ match address ipsec
+!
+!
+!
+interface FastEthernet0/0                                           #WAN link to ISP-Florida
+ ip address 90.85.1.1 255.255.255.252                               #Crypto map is applied to this interface.
+ ip nat outside                                                     
+ ip ospf dead-interval 60
+ ip ospf hello-interval 30
+ ip ospf 1 area 0
+ speed auto
+ duplex auto
+ crypto map map
+!
+interface FastEthernet0/1                                           #LAN link. Will be advertised by OSPF in area 0.
+ ip address 172.16.1.1 255.255.255.0
+ ip nat inside
+ ip ospf 1 area 0
+ speed auto
+ duplex auto
+!
+!
+router ospf 1                                                       #OSPF configuration. Sets RID to 2.2.2.2 and matches
+ router-id 2.2.2.2                                                  #connected interfaces to advertise OSPF routes. A dis-
+ passive-interface FastEthernet0/1                                  #ribute list is configured to prevent this branch from
+ network 40.0.0.0 0.0.0.3 area 0                                    #processing private ISP subnets (addresses match by
+ network 70.164.66.64 0.0.0.3 area 0                                #ACL 111).
+ network 90.85.1.0 0.0.0.3 area 0
+ distribute-list 111 in FastEthernet0/0
+!                                                                            
+ip nat inside source route-map nonat interface FastEthernet0/0 overload          #NAT configuration. Calls route map "nonat"
+!                                                                                #to match inside traffic to be NAT'd. This
+!                                                                                #will prevent outgoing IPSec traffic from being
+!                                                                                #NAT'd.  See further.
+!
+!
+!
+!
+ip route 0.0.0.0 0.0.0.0 FastEthernet0/0 90.85.1.2                               #Default route pointing to ISP
+!
+!
+!
+ip access-list extended ipsec                                                    #ACL that matches traffic to be encrypted by IPSec
+ permit ip 172.16.1.0 0.0.0.255 192.168.0.0 0.0.0.255                            #(permit ip <src net> <src wc> <dest net> <dest wc>)
+ permit ip 172.16.1.0 0.0.0.255 192.168.1.0 0.0.0.255
+!
+!
+!
+access-list 111 deny   ip 10.0.0.0 0.0.0.255 any                                 #OSPF distribution list 111 uses this ACL to block
+!                                                                                #internal ISP subnets from being processed in the 
+!                                                                                #routing table.
+!
+access-list 115 deny   ip 172.16.1.0 0.0.0.255 192.168.0.0 0.0.0.255             #ACL used by route map "nonat" to prevent IPSec traffic      
+access-list 115 deny   ip 172.16.1.0 0.0.0.255 192.168.1.0 0.0.0.255             #from being NAT'd. Permits NAT for all other private traffic.
+access-list 115 permit ip 172.16.1.0 0.0.0.255 any
+!
+route-map nonat permit 10                                                        #Creates route map "nonat," which reads ACL 110 and "permits"
+ match ip address 115                                                            #(matches) the rules specified. The "deny" rules are skipped
+!                                                                                #and the route map only matches non-IPSec traffic.
+!                                                               
+end

@@ -1,0 +1,66 @@
+ISP-Oklahoma#show run
+Building configuration...
+
+Current configuration : 2605 bytes
+!
+! Last configuration change at 21:27:16 UTC Mon Aug 20 2018
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname ISP-Oklahoma
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+!
+interface Loopback0                       #I configured this to make sure the OSPF virtual link to
+ ip address 5.5.5.5 255.255.255.255       #1.1.1.1 is always in an "up/up" state.
+!
+!
+interface GigabitEthernet1/0              #Link to ISP-Internal1
+ ip address 10.0.0.18 255.255.255.252     #OSPF timers modified to reduce CPU overhead on my PC
+ ip nat inside                            #OSPF priority is set to zero to prevent this router from
+ ip ospf dead-interval 60                 #competing with ISP-Internal1 in the designated router
+ ip ospf hello-interval 30                #election for area 1.
+ ip ospf priority 0
+ ip ospf 1 area 1
+ negotiation auto
+!
+interface Serial2/0                       #Physical interface is up and configured to use frame relay
+ no ip address                           
+ encapsulation frame-relay
+ serial restart-delay 0
+!
+interface Serial2/0.1 multipoint          #Point-to-multipoint subinterface is configured. This interface
+ ip address 99.100.25.1 255.255.255.240   #is the frame relay hub for the Oklahoma WAN. Point-to-
+ ip nat outside                           #multipoint (NMBA) OSPF is configured for area 2 and DLCIs
+ ip ospf network point-to-multipoint      #have been configured to create endpoints for three PVCs
+ ip ospf 1 area 2                         #(one for each spoke).
+ frame-relay interface-dlci 101
+ frame-relay interface-dlci 201
+ frame-relay interface-dlci 301
+!
+!
+!
+router ospf 1                             #OSPF configuration. Defines OSPF RID as 5.5.5.5 and establishes
+ router-id 5.5.5.5                        #a virtual link that traverses area 1 to router 1.1.1.1. Network
+ area 1 virtual-link 1.1.1.1              #statements are absent because OSPF is configured on interfaces directly
+!
+ip nat inside source list NAT interface Serial2/0.1 overload            #Basic NAT overload (PAT) configuration. Calls ACL 
+!                                                                       #named "NAT" to match internal traffic to be NAT'd
+!
+!
+ip route 0.0.0.0 0.0.0.0 GigabitEthernet1/0 10.0.0.17                   #Default route pointing to ISP
+!
+!
+ip access-list extended NAT                   #ACL that matches internal traffic to be NAT'd
+ permit ip 10.0.0.0 0.0.0.255 any
+!
+!
+!
+!
+end
