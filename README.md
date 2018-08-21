@@ -29,8 +29,6 @@ Upcoming Features:
  
  ISP-Internal-1 and ISP-Internal-2 are redistributing OSPF and EIGRP. Plenty of route maps.
  
- ISPs usually don't have 1544 Kb/s serial links in their core. Also, they usually own more than four routers.
- 
  You'll need to run "ip dhcp" on the virtual workstations and let them acquire an IP address before they can ping.
  
  
