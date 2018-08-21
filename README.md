@@ -1,5 +1,5 @@
 # wan_magic
-This is a complex WAN topology that I put together over a weekend. I hope that it may serve as a useful
+This is a fun WAN topology that I put together over a weekend. I hope that it serves as a useful
 guideline for certain types of configurations in Cisco IOS.
 
 The goal here was to develop a "difficult" network to deal with - one that involves as many moving parts as possible - as a
