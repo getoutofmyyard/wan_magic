@@ -11,12 +11,6 @@ service timestamps log datetime msec
 !
 hostname ISP-Houston
 !
-boot-start-marker
-boot-end-marker
-!
-ip tcp synwait-time 5
-!
-!
 !
 !
 !
