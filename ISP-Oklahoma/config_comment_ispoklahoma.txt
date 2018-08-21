@@ -17,8 +17,8 @@ boot-end-marker
 !
 !
 !
-interface Loopback0                       #I configured this to make sure the OSPF virtual link to
- ip address 5.5.5.5 255.255.255.255       #1.1.1.1 is always in an "up/up" state.
+interface Loopback0                       
+ ip address 5.5.5.5 255.255.255.255       
 !
 !
 interface GigabitEthernet1/0              #Link to ISP-Internal1
