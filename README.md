@@ -7,7 +7,7 @@ wanted it to work.
 
 I don't know what the network feels like, but I do know that it works.
 
-All routers, including the frame relay switch (which is actually just a router), were configured by me from scratch. 
+All routers, including the frame relay switch (which actually is just a router), were configured by me from scratch. 
 
 ------------------------------------------------------------------------------------
 
