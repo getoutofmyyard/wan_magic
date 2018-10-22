@@ -1,16 +1,6 @@
 # wan_magic
 This is a wide area network that I put together over a weekend. It is a work in progress.
 
-My goal was to design a network with various oddball requirements. I wanted it to feel 
-like a network that had been taken apart and cobbled back together over the years. More importantly, I
-wanted it to be stable.
-
-I don't know what the network feels like, but I do know that it's stable.
-
-All routers, including the frame relay switch (which actually is just a router), were configured by me from scratch. 
-
-------------------------------------------------------------------------------------
-
 Upcoming Features:
 
   Gateway redundancy with HSRP and dual-homed ISP connections;
