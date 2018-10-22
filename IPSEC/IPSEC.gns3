@@ -2,11 +2,17 @@
     "auto_close": true,
     "auto_open": false,
     "auto_start": false,
+    "grid_size": 75,
     "name": "IPSEC",
     "project_id": "64bb7bec-c1ee-4df1-9750-fb440abcc580",
-    "revision": 7,
+    "revision": 8,
     "scene_height": 1000,
     "scene_width": 2000,
+    "show_grid": false,
+    "show_interface_labels": false,
+    "show_layers": false,
+    "snap_to_grid": false,
+    "supplier": null,
     "topology": {
         "computes": [],
         "drawings": [
@@ -61,119 +67,95 @@
             {
                 "drawing_id": "31aa9ab4-bcf4-462e-87e6-0b5a4b798582",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.65</text></svg>",
-                "x": -704,
-                "y": 448,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.65</text></svg>",
+                "x": -698,
+                "y": 416,
                 "z": 1
             },
             {
                 "drawing_id": "b18f2b39-bc00-4446-8c7b-f01724d29195",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"116\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">70.164.65.64/30</text></svg>",
-                "x": -656,
-                "y": 395,
+                "svg": "<svg height=\"24\" width=\"116\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">70.164.65.64/30</text></svg>",
+                "x": -640,
+                "y": 448,
                 "z": 1
             },
             {
                 "drawing_id": "43c3c65d-dc32-46e3-aaaf-6614929ab077",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.66</text></svg>",
-                "x": -500,
-                "y": 452,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.66</text></svg>",
+                "x": -485,
+                "y": 418,
                 "z": 1
             },
             {
                 "drawing_id": "82dc273f-2b23-4b14-a4ee-770a3bd5b2df",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"84\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.0/30</text></svg>",
-                "x": -449,
-                "y": 316,
-                "z": 1
-            },
-            {
-                "drawing_id": "e150801a-7798-40ff-959f-8602a8880f2b",
-                "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"84\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.4/30</text></svg>",
-                "x": -449,
-                "y": 508,
-                "z": 1
-            },
-            {
-                "drawing_id": "247f12ac-16bd-48b6-ac8a-853e8b317d81",
-                "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"84\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.8/30</text></svg>",
-                "x": -204,
-                "y": 320,
-                "z": 1
-            },
-            {
-                "drawing_id": "861c1dfe-7f90-411e-b684-9ea4455cb3e9",
-                "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"92\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.12/30</text></svg>",
-                "x": -216,
-                "y": 505,
+                "svg": "<svg height=\"24\" width=\"84\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.0/26</text></svg>",
+                "x": -324,
+                "y": 409,
                 "z": 1
             },
             {
                 "drawing_id": "477407f3-1f3f-479a-bee9-5083b18900cd",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
-                "x": -403,
-                "y": 418,
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "x": -418,
+                "y": 379,
                 "z": 1
             },
             {
                 "drawing_id": "6c64ad6c-b61c-4c19-b1c7-1fb81b973b88",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
-                "x": -313,
-                "y": 296,
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
+                "x": -334,
+                "y": 270,
                 "z": 1
             },
             {
                 "drawing_id": "4ba73cce-d85a-4317-b23c-13d9ccee26a3",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.5</text></svg>",
-                "x": -423,
-                "y": 464,
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.5</text></svg>",
+                "x": -403,
+                "y": 460,
                 "z": 1
             },
             {
                 "drawing_id": "22171d5f-4f74-4467-8d9e-f04665877d5f",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.6</text></svg>",
-                "x": -348,
-                "y": 529,
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.6</text></svg>",
+                "x": -345,
+                "y": 526,
                 "z": 1
             },
             {
                 "drawing_id": "f2980db1-b1a2-4d03-929c-f8adadf6950a",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.9</text></svg>",
-                "x": -263,
-                "y": 293,
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.9</text></svg>",
+                "x": -250,
+                "y": 261,
                 "z": 1
             },
             {
                 "drawing_id": "f52fb594-7982-4ab9-93f7-161c9b16c5d2",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.10</text></svg>",
-                "x": -184,
-                "y": 423,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.10</text></svg>",
+                "x": -167,
+                "y": 376,
                 "z": 1
             },
             {
                 "drawing_id": "d3c0b023-ba7e-4157-80aa-846253b522ef",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.13</text></svg>",
-                "x": -251,
-                "y": 531,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.13</text></svg>",
+                "x": -255,
+                "y": 522,
                 "z": 1
             },
             {
                 "drawing_id": "7b05b0b6-dcba-41f7-908f-142dd4b6de07",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.14</text></svg>",
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.14</text></svg>",
                 "x": -150,
                 "y": 457,
                 "z": 1
@@ -229,7 +211,7 @@
             {
                 "drawing_id": "a68ae1b3-096e-4767-91e5-c1ece253cf52",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"92\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">90.85.1.0/30</text></svg>",
+                "svg": "<svg height=\"24\" width=\"92\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">90.85.1.0/30</text></svg>",
                 "x": -67,
                 "y": 447,
                 "z": 1
@@ -237,7 +219,7 @@
             {
                 "drawing_id": "ce90b521-4dd2-4157-afb4-c7ee90d2e99b",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.1</text></svg>",
                 "x": 15,
                 "y": 410,
                 "z": 1
@@ -245,7 +227,7 @@
             {
                 "drawing_id": "22e5b064-77ad-4304-9b7d-605bae69336c",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
+                "svg": "<svg height=\"24\" width=\"20\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.2</text></svg>",
                 "x": -88,
                 "y": 408,
                 "z": 1
@@ -275,17 +257,9 @@
                 "z": 1
             },
             {
-                "drawing_id": "ecb78aad-7363-4892-a43c-86f1274dddee",
-                "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"92\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">10.0.0.16/30</text></svg>",
-                "x": -238,
-                "y": 158,
-                "z": 1
-            },
-            {
                 "drawing_id": "37540488-663f-4aee-9781-968a1d382b09",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.17</text></svg>",
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.17</text></svg>",
                 "x": -285,
                 "y": 190,
                 "z": 1
@@ -293,7 +267,7 @@
             {
                 "drawing_id": "05cc52e4-fa6a-401c-b23e-b332feb002d0",
                 "rotation": 0,
-                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#000000\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.18</text></svg>",
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.18</text></svg>",
                 "x": -254,
                 "y": 109,
                 "z": 1
@@ -433,10 +407,27 @@
                 "x": -1270,
                 "y": 327,
                 "z": 1
+            },
+            {
+                "drawing_id": "81b4e684-696a-4fbf-b0c0-e285fe3bddbe",
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.25</text></svg>",
+                "x": -279,
+                "y": 297,
+                "z": 1
+            },
+            {
+                "drawing_id": "7b0f802d-a243-4cec-a0b4-6f6c167807e0",
+                "rotation": 0,
+                "svg": "<svg height=\"24\" width=\"28\"><text fill=\"#ffff00\" fill-opacity=\"1.0\" font-family=\"TypeWriter\" font-size=\"10.0\" font-weight=\"bold\">.26</text></svg>",
+                "x": -281,
+                "y": 478,
+                "z": 1
             }
         ],
         "links": [
             {
+                "filters": {},
                 "link_id": "639db98f-7cf5-4c52-9057-bc45572acfe4",
                 "nodes": [
                     {
@@ -463,9 +454,11 @@
                         "node_id": "173cbf90-bc02-4ba3-add3-c19161897240",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "8915a263-ac3a-4d54-8acd-bbfd3ee3e25e",
                 "nodes": [
                     {
@@ -492,9 +485,11 @@
                         "node_id": "173cbf90-bc02-4ba3-add3-c19161897240",
                         "port_number": 1
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "c12ddb78-5d58-4424-ac47-e714d2a01820",
                 "nodes": [
                     {
@@ -521,9 +516,11 @@
                         "node_id": "30e02831-9dff-4951-aee9-db7926a63667",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "776dfe81-bf01-4235-b897-5d11ab0b37f8",
                 "nodes": [
                     {
@@ -550,9 +547,11 @@
                         "node_id": "539e6a8a-717a-49d9-a3cf-7dfefbd06106",
                         "port_number": 1
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "feadd0ba-60ae-47be-bad1-022c620ef496",
                 "nodes": [
                     {
@@ -579,9 +578,11 @@
                         "node_id": "269eeab3-0fde-4807-8dac-345f99ee0272",
                         "port_number": 2
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "7a47a255-e890-42fb-89b0-033ff500102a",
                 "nodes": [
                     {
@@ -608,9 +609,11 @@
                         "node_id": "5f4f8353-7f65-4a0b-89b6-3412c5a13812",
                         "port_number": 2
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "f189e7b9-60b6-4b50-84ff-c3711c471a88",
                 "nodes": [
                     {
@@ -637,9 +640,11 @@
                         "node_id": "5f4f8353-7f65-4a0b-89b6-3412c5a13812",
                         "port_number": 3
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "66b7e403-f85b-48ee-8cf5-78e4328400df",
                 "nodes": [
                     {
@@ -666,9 +671,11 @@
                         "node_id": "7373009f-007d-49d1-86e5-747fd4281bbf",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "ddf99179-d899-42c1-b5fa-1d58f9f417b0",
                 "nodes": [
                     {
@@ -695,9 +702,11 @@
                         "node_id": "3aeab5dc-8c16-4d27-8f5b-c20cee2d6453",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "ec9968ce-d59f-46d9-a1bb-a44ab20da898",
                 "nodes": [
                     {
@@ -724,9 +733,11 @@
                         "node_id": "9e80a444-3e64-4089-9526-f83a12b85451",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "e9870f5b-a81c-4fb1-bea7-0e189b88249b",
                 "nodes": [
                     {
@@ -753,9 +764,11 @@
                         "node_id": "94748766-518f-4d40-9909-71c3f869dbd7",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "57d8fddc-1191-4bc4-8582-fb0cd4b1f1e6",
                 "nodes": [
                     {
@@ -782,9 +795,11 @@
                         "node_id": "80fc9e97-e3da-4fb9-8c0b-f61a07a75556",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "0009d042-2cec-4311-8429-d66988fc3ba8",
                 "nodes": [
                     {
@@ -811,9 +826,11 @@
                         "node_id": "a4aabd92-bf0b-410f-95aa-c0f319ada472",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "422a7f67-b7ef-44cb-a9b0-e722abad1669",
                 "nodes": [
                     {
@@ -840,9 +857,11 @@
                         "node_id": "a4aabd92-bf0b-410f-95aa-c0f319ada472",
                         "port_number": 1
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "e704bd5c-0b10-4d25-bb10-dd477c472cf0",
                 "nodes": [
                     {
@@ -869,9 +888,11 @@
                         "node_id": "a4aabd92-bf0b-410f-95aa-c0f319ada472",
                         "port_number": 2
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "eaee2d25-17ec-4bb4-ae66-af821000f203",
                 "nodes": [
                     {
@@ -898,9 +919,11 @@
                         "node_id": "a4aabd92-bf0b-410f-95aa-c0f319ada472",
                         "port_number": 3
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "25baa01b-d1b8-4d30-a9db-0e7ea6f32960",
                 "nodes": [
                     {
@@ -927,9 +950,11 @@
                         "node_id": "974af94c-280a-48f0-aa64-ed60f5210f79",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "407149ef-546c-45ec-9c54-b2fc0f788aae",
                 "nodes": [
                     {
@@ -956,9 +981,11 @@
                         "node_id": "abdde033-7676-43bb-85f4-72bb635dacdc",
                         "port_number": 1
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "d90cc78e-f415-4733-bf48-73beaaefed7b",
                 "nodes": [
                     {
@@ -985,9 +1012,11 @@
                         "node_id": "c89fccf2-154b-4723-b5fa-eeb03afb12f4",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "33b66ad9-c18f-4f12-aaff-40e8aa05eb79",
                 "nodes": [
                     {
@@ -1014,9 +1043,11 @@
                         "node_id": "1e4aebc7-1107-463f-a57d-52eea6ad58e0",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "d26f825e-6518-497e-8b26-a2f0e15e98d3",
                 "nodes": [
                     {
@@ -1043,9 +1074,11 @@
                         "node_id": "56f7b1e0-aed3-42f7-b253-c25fc8569628",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
             },
             {
+                "filters": {},
                 "link_id": "112b165c-9012-4842-b22a-c61304103954",
                 "nodes": [
                     {
@@ -1072,7 +1105,39 @@
                         "node_id": "0b08e5c2-def2-4bd0-9971-3eb149b71e04",
                         "port_number": 0
                     }
-                ]
+                ],
+                "suspend": false
+            },
+            {
+                "filters": {},
+                "link_id": "2e4f9304-2d5f-478f-bcd8-6d851a5be126",
+                "nodes": [
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 33,
+                            "y": -17
+                        },
+                        "node_id": "269eeab3-0fde-4807-8dac-345f99ee0272",
+                        "port_number": 0
+                    },
+                    {
+                        "adapter_number": 0,
+                        "label": {
+                            "rotation": 0,
+                            "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                            "text": "f0/0",
+                            "x": 32,
+                            "y": 61
+                        },
+                        "node_id": "539e6a8a-717a-49d9-a3cf-7dfefbd06106",
+                        "port_number": 0
+                    }
+                ],
+                "suspend": false
             }
         ],
         "nodes": [
@@ -1084,7 +1149,7 @@
                 "height": 45,
                 "label": {
                     "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #55ffff;fill-opacity: 1.0;",
                     "text": "Houston-Branch",
                     "x": -23,
                     "y": -25
@@ -1117,8 +1182,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/30e02831-9dff-4951-aee9-db7926a63667/configs/i1_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1134,14 +1197,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i1_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 13:31:56 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname Houston-Branch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\nip dhcp excluded-address 192.168.0.1\nip dhcp excluded-address 192.168.1.1\n!\nip dhcp pool HOUSTON\n network 192.168.0.0 255.255.255.0\n default-router 192.168.0.1 \n domain-name houston.local\n!\nip dhcp pool HOUSTON2\n network 192.168.1.0 255.255.255.0\n default-router 192.168.1.1 \n domain-name houston.local\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\nusername jared password 0 sheist3hho\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\ncrypto isakmp policy 1\n hash md5\n authentication pre-share\n group 2\ncrypto isakmp key password address 90.85.1.1      \ncrypto isakmp key password address 99.100.25.3     255.255.255.240 no-xauth\ncrypto isakmp key password address 99.100.25.2     255.255.255.240 no-xauth\ncrypto isakmp key password address 99.100.25.4     255.255.255.240 no-xauth\n!\n!\ncrypto ipsec transform-set transformset esp-des esp-md5-hmac \n mode tunnel\n!\n!\n!\ncrypto map map 1 ipsec-isakmp \n set peer 90.85.1.1\n set transform-set transformset \n match address ipsec\ncrypto map map 2 ipsec-isakmp \n set peer 99.100.25.2\n set transform-set transformset \n match address 107\ncrypto map map 3 ipsec-isakmp \n set peer 99.100.25.3\n set transform-set transformset \n match address 108\ncrypto map map 4 ipsec-isakmp \n set peer 99.100.25.4\n set transform-set transformset \n match address 109\n!\n!\n!\n!\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n ip address 192.168.0.1 255.255.255.0\n ip nat inside\n speed auto\n duplex auto\n!\ninterface FastEthernet0/0.1\n encapsulation dot1Q 2\n ip address 192.168.1.1 255.255.255.0\n ip helper-address 192.168.0.1\n ip nat inside\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n ip address 70.164.65.65 255.255.255.252\n ip nat outside\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n negotiation auto\n crypto map map\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 100\n network 40.0.0.0 0.0.0.3\n network 50.0.0.0 0.0.0.3\n network 70.164.65.64 0.0.0.3\n network 192.168.0.0\n network 192.168.1.0\n!\nip local pool test-pool 192.168.1.10 192.168.1.254\nip nat inside source route-map nonat interface GigabitEthernet1/0 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 GigabitEthernet1/0 70.164.65.66\n!\nip access-list extended ipsec\n permit ip 192.168.0.0 0.0.0.255 172.16.1.0 0.0.0.255\n permit ip 192.168.1.0 0.0.0.255 172.16.1.0 0.0.0.255\n!\naccess-list 107 permit ip 192.168.0.0 0.0.0.255 172.20.0.0 0.0.0.255\naccess-list 107 permit ip 192.168.1.0 0.0.0.255 172.20.0.0 0.0.0.255\naccess-list 108 permit ip 192.168.1.0 0.0.0.255 172.20.1.0 0.0.0.255\naccess-list 108 permit ip 192.168.0.0 0.0.0.255 172.20.1.0 0.0.0.255\naccess-list 109 permit ip 192.168.0.0 0.0.255.255 172.20.2.0 0.0.0.255\naccess-list 110 deny   ip 192.168.1.0 0.0.0.255 172.16.1.0 0.0.0.255\naccess-list 110 deny   ip 192.168.0.0 0.0.0.255 172.16.1.0 0.0.0.255\naccess-list 110 deny   ip 192.168.0.0 0.0.0.255 172.20.0.0 0.0.0.255\naccess-list 110 deny   ip 192.168.1.0 0.0.0.255 172.20.0.0 0.0.0.255\naccess-list 110 deny   ip 192.168.0.0 0.0.0.255 172.20.1.0 0.0.0.255\naccess-list 110 deny   ip 192.168.1.0 0.0.0.255 172.20.1.0 0.0.0.255\naccess-list 110 deny   ip 192.168.0.0 0.0.255.255 172.20.2.0 0.0.0.255\naccess-list 110 permit ip 192.168.0.0 0.0.0.255 any\naccess-list 110 permit ip 192.168.1.0 0.0.0.255 any\n!\nroute-map nonat permit 10\n match ip address 110\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": -774,
-                "y": 421,
+                "x": -772,
+                "y": 420,
                 "z": 1
             },
             {
@@ -1152,7 +1213,7 @@
                 "height": 45,
                 "label": {
                     "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #55ffff;fill-opacity: 1.0;",
                     "text": "ISP-Houston",
                     "x": -11,
                     "y": -25
@@ -1185,8 +1246,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/94748766-518f-4d40-9909-71c3f869dbd7/configs/i2_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1202,14 +1261,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i2_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 13:21:39 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname ISP-Houston\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\naaa new-model\n!\n!\n!\n!\n!\n!\n!\naaa session-id common\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\nusername jared password 0 sheist3hho\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n ip address 70.164.65.66 255.255.255.252\n ip nat outside\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n ip address 10.0.0.1 255.255.255.252\n ip nat inside\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n serial restart-delay 0\n!\ninterface Serial2/2\n ip address 10.0.0.5 255.255.255.252\n ip nat inside\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n delay 99999\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 100\n distribute-list 25 out GigabitEthernet1/0\n network 10.0.0.0 0.0.0.3\n network 10.0.0.4 0.0.0.3\n network 70.164.65.64 0.0.0.3\n!\nip nat pool overload 70.164.65.66 70.164.65.66 prefix-length 30\nip nat inside source list 10 pool overload overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 70.164.65.64 255.255.255.252 GigabitEthernet1/0\n!\naccess-list 10 permit 10.0.0.0 0.0.0.255\naccess-list 25 deny   10.0.0.0 0.0.0.255\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": -469,
-                "y": 423,
+                "x": -451,
+                "y": 419,
                 "z": 1
             },
             {
@@ -1220,10 +1277,10 @@
                 "height": 45,
                 "label": {
                     "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #55ffff;fill-opacity: 1.0;",
                     "text": "ISP-Internal-1",
-                    "x": -14,
-                    "y": -19
+                    "x": 60,
+                    "y": -16
                 },
                 "name": "ISP-Internal-1",
                 "node_id": "539e6a8a-717a-49d9-a3cf-7dfefbd06106",
@@ -1253,8 +1310,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/539e6a8a-717a-49d9-a3cf-7dfefbd06106/configs/i3_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1270,14 +1325,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i3_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 11:40:24 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname ISP-Internal-1\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n ip address 10.0.0.17 255.255.255.252\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf priority 253\n ip ospf 1 area 1\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n ip address 10.0.0.2 255.255.255.252\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n serial restart-delay 0\n!\ninterface Serial2/2\n ip address 10.0.0.9 255.255.255.252\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 100\n network 10.0.0.0 0.0.0.3\n redistribute ospf 1 metric 1500 1 255 1 1500 route-map ospf>eigrp\n!\nrouter ospf 1\n router-id 3.3.3.3\n redistribute eigrp 100 subnets route-map eigrp>ospf\n network 10.0.0.8 0.0.0.3 area 1\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 70.164.65.64 255.255.255.252 Serial2/1 10.0.0.1\nip route 172.20.0.0 255.255.255.0 GigabitEthernet1/0 10.0.0.18\nip route 172.20.1.0 255.255.255.0 GigabitEthernet1/0 10.0.0.18\n!\n!\nroute-map eigrp>ospf deny 10\n match tag 11\n!\nroute-map eigrp>ospf permit 20\n set tag 22\n!\nroute-map ospf>eigrp deny 10\n match tag 22\n!\nroute-map ospf>eigrp permit 20\n set tag 11\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
                 "x": -318,
-                "y": 236,
+                "y": 233,
                 "z": 1
             },
             {
@@ -1288,9 +1341,9 @@
                 "height": 45,
                 "label": {
                     "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #55ffff;fill-opacity: 1.0;",
                     "text": "ISP-Internal-2",
-                    "x": -17,
+                    "x": -19,
                     "y": -25
                 },
                 "name": "ISP-Internal-2",
@@ -1321,8 +1374,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/269eeab3-0fde-4807-8dac-345f99ee0272/configs/i4_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1338,8 +1389,6 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i4_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname ISP-Internal-2\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n ip address 10.0.0.6 255.255.255.252\n ip hello-interval eigrp 100 30\n ip hold-time eigrp 100 60\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n serial restart-delay 0\n!\ninterface Serial2/3\n ip address 10.0.0.13 255.255.255.252\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf 1 area 1\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 100\n network 10.0.0.4 0.0.0.3\n redistribute ospf 1 metric 1500 1 255 1 1500 route-map ospf>eigrp\n!\nrouter ospf 1\n redistribute eigrp 100 subnets route-map eigrp>ospf\n network 10.0.0.12 0.0.0.3 area 1\n distance 50\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\nroute-map eigrp>ospf deny 10\n match tag 11\n!\nroute-map eigrp>ospf permit 20\n set tag 22\n!\nroute-map ospf>eigrp deny 10\n match tag 22\n!\nroute-map ospf>eigrp permit 20\n set tag 11\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
@@ -1356,7 +1405,7 @@
                 "height": 45,
                 "label": {
                     "rotation": 0,
-                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
+                    "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #55ffff;fill-opacity: 1.0;",
                     "text": "ISP-Florida",
                     "x": -5,
                     "y": -25
@@ -1389,8 +1438,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/5f4f8353-7f65-4a0b-89b6-3412c5a13812/configs/i5_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1406,14 +1453,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i5_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 14:22:50 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname ISP-Florida\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n ip address 90.85.1.2 255.255.255.252\n ip nat outside\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf 1 area 0\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n ip address 10.0.0.10 255.255.255.252\n ip nat inside\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf 1 area 1\n serial restart-delay 0\n!\ninterface Serial2/3\n ip address 10.0.0.14 255.255.255.252\n ip nat inside\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf 1 area 1\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\n!\nrouter eigrp 100\n distribute-list 10 out FastEthernet0/0\n!\nrouter ospf 1\n router-id 1.1.1.1\n area 1 virtual-link 5.5.5.5\n network 10.0.0.8 0.0.0.3 area 1\n network 10.0.0.12 0.0.0.3 area 1\n network 90.85.1.0 0.0.0.3 area 0\n!\nip nat pool overload 90.85.1.2 90.85.1.2 prefix-length 30\nip nat inside source list 10 pool overload overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\naccess-list 10 permit 10.0.0.0 0.0.0.255\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
-                "x": -155,
-                "y": 418,
+                "x": -153,
+                "y": 417,
                 "z": 1
             },
             {
@@ -1457,8 +1502,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/7373009f-007d-49d1-86e5-747fd4281bbf/configs/i6_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1474,8 +1517,6 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i6_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 13:31:30 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname Florida-Branch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\nip dhcp pool FLORDIA\n network 172.16.1.0 255.255.255.0\n default-router 172.16.1.1 \n domain-name florida.local\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\ncrypto isakmp policy 1\n hash md5\n authentication pre-share\n group 2\ncrypto isakmp key password address 70.164.65.65   \n!\n!\ncrypto ipsec transform-set transformset esp-des esp-md5-hmac \n mode tunnel\n!\n!\n!\ncrypto map map 1 ipsec-isakmp \n set peer 70.164.65.65\n set transform-set transformset \n match address ipsec\n!\n!\n!\n!\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n ip address 90.85.1.1 255.255.255.252\n ip nat outside\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf 1 area 0\n speed auto\n duplex auto\n crypto map map\n!\ninterface FastEthernet0/1\n ip address 172.16.1.1 255.255.255.0\n ip nat inside\n ip ospf 1 area 0\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\nrouter ospf 1\n router-id 2.2.2.2\n passive-interface FastEthernet0/1\n network 40.0.0.0 0.0.0.3 area 0\n network 70.164.66.64 0.0.0.3 area 0\n network 90.85.1.0 0.0.0.3 area 0\n distribute-list 111 in FastEthernet0/0\n!\nip nat inside source list NAT interface FastEthernet0/0 overload\nip nat inside source route-map nonat interface FastEthernet0/0 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 FastEthernet0/0 90.85.1.2\n!\nip access-list extended ipsec\n permit ip 172.16.1.0 0.0.0.255 192.168.0.0 0.0.0.255\n permit ip 172.16.1.0 0.0.0.255 192.168.1.0 0.0.0.255\n!\naccess-list 111 deny   ip 10.0.0.0 0.0.0.255 any\naccess-list 115 deny   ip 172.16.1.0 0.0.0.255 192.168.0.0 0.0.0.255\naccess-list 115 deny   ip 172.16.1.0 0.0.0.255 192.168.1.0 0.0.0.255\naccess-list 115 permit ip 172.16.1.0 0.0.0.255 any\n!\nroute-map nonat permit 10\n match ip address 115\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
@@ -1486,8 +1527,8 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_type": null,
+                "console": 5006,
+                "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
                 "label": {
@@ -1564,8 +1605,8 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_type": null,
+                "console": 5007,
+                "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
                 "label": {
@@ -1640,7 +1681,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5006,
+                "console": 5008,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -1656,10 +1697,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname HPC1\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": -1005,
@@ -1668,7 +1706,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5008,
+                "console": 5010,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -1684,10 +1722,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname PC2\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": 239,
@@ -1696,7 +1731,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5010,
+                "console": 5012,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -1712,10 +1747,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname HPC2\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": -1012,
@@ -1763,8 +1795,6 @@
                         1,
                         1
                     ],
-                    "private_config": "configs/i10_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1780,14 +1810,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i10_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 12:00:21 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname ISP-Oklahoma\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 5.5.5.5 255.255.255.255\n!\ninterface Loopback1\n no ip address\n shutdown\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface Tunnel10\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n ip address 10.0.0.18 255.255.255.252\n ip nat inside\n ip ospf dead-interval 60\n ip ospf hello-interval 30\n ip ospf priority 0\n ip ospf 1 area 1\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n encapsulation frame-relay\n serial restart-delay 0\n!\ninterface Serial2/0.1 multipoint\n ip address 99.100.25.1 255.255.255.240\n ip nat outside\n ip ospf network point-to-multipoint\n ip ospf dead-interval 60\n ip ospf 1 area 2\n frame-relay interface-dlci 101\n frame-relay interface-dlci 201\n frame-relay interface-dlci 301\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface FastEthernet3/0\n no ip address\n shutdown\n duplex full\n!\nrouter ospf 1\n router-id 5.5.5.5\n area 1 virtual-link 1.1.1.1\n!\nip nat inside source list NAT interface Serial2/0.1 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 GigabitEthernet1/0 10.0.0.17\nip route 70.164.65.64 255.255.255.252 GigabitEthernet1/0 10.0.0.17\nip route 172.20.0.0 255.255.255.0 Serial2/0.1 99.100.25.2\nip route 172.20.1.0 255.255.255.0 Serial2/0.1 99.100.25.3\n!\nip access-list extended NAT\n permit ip 10.0.0.0 0.0.0.255 any\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
                 "x": -233,
-                "y": 71,
+                "y": 62,
                 "z": 1
             },
             {
@@ -1831,8 +1859,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/974af94c-280a-48f0-aa64-ed60f5210f79/configs/i11_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1848,8 +1874,6 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i11_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 14:19:28 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname OKC-Branch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\nip dhcp pool sub1\n network 172.20.0.0 255.255.255.0\n default-router 172.20.0.1 \n domain-name oklahoma.local\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\ncrypto isakmp policy 10\n hash md5\n authentication pre-share\n group 2\ncrypto isakmp key password address 70.164.65.65    255.255.255.252 no-xauth\n!\n!\ncrypto ipsec transform-set transformset esp-des esp-md5-hmac \n mode tunnel\n!\n!\n!\ncrypto map map 1 ipsec-isakmp \n set peer 70.164.65.65\n set ip access-group 101 out\n set transform-set transformset \n match address 101\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 6.6.6.6 255.255.255.255\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n ip address 172.20.0.1 255.255.255.0\n ip nat inside\n ip ospf 1 area 2\n speed auto\n duplex auto\n crypto map map\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/0.1\n!\ninterface Serial2/1\n ip address 99.100.25.2 255.255.255.240\n ip access-group 101 out\n ip nat outside\n encapsulation frame-relay\n ip ospf network point-to-multipoint\n ip ospf dead-interval 60\n ip ospf 1 area 2\n serial restart-delay 0\n frame-relay map ip 99.100.25.4 601 broadcast\n frame-relay map ip 99.100.25.3 501 broadcast\n frame-relay interface-dlci 102\n frame-relay interface-dlci 501\n frame-relay interface-dlci 601\n crypto map map\n!\ninterface Serial2/1.1 multipoint\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\nrouter ospf 1\n passive-interface FastEthernet0/0\n network 10.0.0.0 0.0.0.15 area 2\n network 99.100.25.0 0.0.0.15 area 2\n network 172.20.0.0 0.0.0.255 area 2\n distribute-list 111 in Serial2/1\n!\nip nat inside source route-map nonat interface Serial2/1 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 Serial2/1 99.100.25.1\n!\nip access-list extended NAT\n deny   ip 172.20.0.0 0.0.0.255 192.168.0.0 0.0.0.255\n deny   ip 172.20.0.0 0.0.0.255 192.168.1.0 0.0.0.255\n permit ip 172.20.0.0 0.0.0.255 any\n!\naccess-list 101 permit ip 172.20.0.0 0.0.0.255 192.168.0.0 0.0.0.255\naccess-list 101 permit ip 172.20.0.0 0.0.0.255 192.168.1.0 0.0.0.255\naccess-list 101 permit ip host 99.100.25.2 host 70.164.65.65\naccess-list 111 deny   ip 10.0.0.0 0.0.0.255 any\n!\nroute-map nonat permit 10\n match ip address NAT\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
@@ -1899,8 +1923,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/1e4aebc7-1107-463f-a57d-52eea6ad58e0/configs/i12_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1916,8 +1938,6 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i12_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 14:18:55 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname Tulsa-Branch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\nip dhcp pool sub2\n network 172.20.1.0 255.255.255.0\n default-router 172.20.1.1 \n domain-name oklahoma.local\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\ncrypto isakmp policy 10\n hash md5\n authentication pre-share\n group 2\ncrypto isakmp key password address 70.164.65.65    255.255.255.252 no-xauth\n!\n!\ncrypto ipsec transform-set transformset esp-des esp-md5-hmac \n mode tunnel\ncrypto ipsec transform-set set esp-des esp-md5-hmac \n mode tunnel\n!\n!\n!\ncrypto map map 1 ipsec-isakmp \n set peer 70.164.65.65\n set transform-set set \n match address ipsec\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 7.7.7.7 255.255.255.255\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n ip address 172.20.1.1 255.255.255.0\n ip nat inside\n ip ospf 1 area 2\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n ip address 99.100.25.3 255.255.255.240\n ip nat outside\n encapsulation frame-relay\n ip ospf network point-to-multipoint\n ip ospf dead-interval 60\n ip ospf 1 area 2\n serial restart-delay 0\n frame-relay map ip 99.100.25.2 502 broadcast\n frame-relay map ip 99.100.25.4 403 broadcast\n frame-relay interface-dlci 202\n frame-relay interface-dlci 403\n frame-relay interface-dlci 502\n crypto map map\n!\ninterface Serial2/3\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\nrouter ospf 1\n passive-interface FastEthernet0/0\n network 99.100.25.0 0.0.0.15 area 2\n network 172.20.1.0 0.0.0.255 area 2\n distribute-list 111 in Serial2/2\n!\nip nat inside source route-map nonat interface Serial2/2 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 Serial2/2 99.100.25.1\nip route 70.164.65.64 255.255.255.252 Serial2/2 99.100.25.1\n!\nip access-list extended ipsec\n permit ip 172.20.1.0 0.0.0.255 192.168.1.0 0.0.0.255\n permit ip 172.20.1.0 0.0.0.255 192.168.0.0 0.0.0.255\n!\naccess-list 111 deny   ip 10.0.0.0 0.0.0.255 any\naccess-list 155 deny   ip 172.20.1.0 0.0.0.255 192.168.0.0 0.0.255.255\naccess-list 155 permit ip 172.20.1.0 0.0.0.255 any\n!\nroute-map nonat permit 10\n match ip address 155\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
@@ -1967,8 +1987,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/0b08e5c2-def2-4bd0-9971-3eb149b71e04/configs/i13_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -1984,14 +2002,12 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i13_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 14:22:21 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname Norman-Branch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\nip dhcp pool sub3\n network 172.20.2.0 255.255.255.0\n default-router 172.20.2.1 \n domain-name oklahoma.local\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\ncrypto isakmp policy 10\n hash md5\n authentication pre-share\n group 2\ncrypto isakmp key password address 70.164.65.65    255.255.255.252 no-xauth\n!\n!\ncrypto ipsec transform-set set esp-des esp-md5-hmac \n mode tunnel\n!\n!\n!\ncrypto map map 1 ipsec-isakmp \n set peer 70.164.65.65\n set transform-set set \n match address ipsec\n!\n!\n!\n!\n!\ninterface Loopback0\n ip address 8.8.8.8 255.255.255.255\n!\ninterface Tunnel0\n no ip address\n shutdown\n!\ninterface FastEthernet0/0\n ip address 172.20.2.1 255.255.255.0\n ip nat inside\n ip ospf 1 area 2\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/1\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/2\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/3\n ip address 99.100.25.4 255.255.255.240\n ip nat outside\n encapsulation frame-relay\n ip ospf network point-to-multipoint\n ip ospf dead-interval 60\n ip ospf 1 area 2\n serial restart-delay 0\n frame-relay map ip 99.100.25.2 602 broadcast\n frame-relay map ip 99.100.25.3 402 broadcast\n frame-relay interface-dlci 302\n frame-relay interface-dlci 402\n frame-relay interface-dlci 602\n crypto map map\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\nrouter ospf 1\n passive-interface FastEthernet0/0\n network 172.20.2.0 0.0.0.255 area 2\n distribute-list 111 in Serial2/3\n!\nip nat inside source route-map nonat interface Serial2/3 overload\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\nip route 0.0.0.0 0.0.0.0 Serial2/3 99.100.25.1\n!\nip access-list extended NAT\n deny   ip 172.20.2.0 0.0.0.255 192.168.0.0 0.0.255.255\n permit ip 172.20.2.0 0.0.0.255 any\nip access-list extended ipsec\n permit ip 172.20.2.0 0.0.0.255 192.168.0.0 0.0.255.255\n!\naccess-list 111 deny   ip 10.0.0.0 0.0.0.255 any\n!\nroute-map nonat permit 10\n match ip address NAT\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
                 "width": 66,
                 "x": -10,
-                "y": -294,
+                "y": -295,
                 "z": 1
             },
             {
@@ -2035,8 +2051,6 @@
                         1,
                         1
                     ],
-                    "private_config": "C:/Users/Hooteedee/GNS3/projects/IPSEC/project-files/dynamips/a4aabd92-bf0b-410f-95aa-c0f319ada472/configs/i14_private-config.cfg",
-                    "private_config_content": "\nend\n",
                     "ram": 512,
                     "sensors": [
                         22,
@@ -2052,8 +2066,6 @@
                     "slot5": null,
                     "slot6": null,
                     "sparsemem": true,
-                    "startup_config": "configs/i14_startup-config.cfg",
-                    "startup_config_content": "!\n\n!\n! Last configuration change at 13:54:55 UTC Mon Aug 20 2018\n!\nversion 15.2\nservice timestamps debug datetime msec\nservice timestamps log datetime msec\n!\nhostname Frame-Relay-Switch\n!\nboot-start-marker\nboot-end-marker\n!\n!\n!\nno aaa new-model\nno ip icmp rate-limit unreachable\nip cef\n!\n!\n!\n!\n!\n!\nno ip domain lookup\nno ipv6 cef\n!\n!\nframe-relay switching\nmultilink bundle-name authenticated\n!\n!\n!\n!\n!\n!\n!\n!\n!\nip tcp synwait-time 5\n! \n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\n!\ninterface FastEthernet0/0\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface FastEthernet0/1\n no ip address\n shutdown\n speed auto\n duplex auto\n!\ninterface GigabitEthernet1/0\n no ip address\n shutdown\n negotiation auto\n!\ninterface Serial2/0\n no ip address\n encapsulation frame-relay\n serial restart-delay 0\n clock rate 237176\n frame-relay intf-type dce\n frame-relay route 101 interface Serial2/1 102\n frame-relay route 201 interface Serial2/2 202\n frame-relay route 301 interface Serial2/3 302\n!\ninterface Serial2/1\n no ip address\n encapsulation frame-relay\n serial restart-delay 0\n clock rate 237176\n frame-relay intf-type dce\n frame-relay route 102 interface Serial2/0 101\n frame-relay route 501 interface Serial2/2 502\n frame-relay route 601 interface Serial2/3 602\n!\ninterface Serial2/2\n no ip address\n encapsulation frame-relay\n serial restart-delay 0\n clock rate 237176\n frame-relay intf-type dce\n frame-relay route 202 interface Serial2/0 201\n frame-relay route 403 interface Serial2/3 402\n frame-relay route 502 interface Serial2/1 501\n!\ninterface Serial2/3\n no ip address\n encapsulation frame-relay\n serial restart-delay 0\n clock rate 237176\n frame-relay intf-type dce\n frame-relay route 302 interface Serial2/0 301\n frame-relay route 402 interface Serial2/2 403\n frame-relay route 602 interface Serial2/1 601\n!\ninterface Serial2/4\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/5\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/6\n no ip address\n shutdown\n serial restart-delay 0\n!\ninterface Serial2/7\n no ip address\n shutdown\n serial restart-delay 0\n!\nip forward-protocol nd\n!\n!\nno ip http server\nno ip http secure-server\n!\n!\n!\n!\ncontrol-plane\n!\n!\nline con 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline aux 0\n exec-timeout 0 0\n privilege level 15\n logging synchronous\n stopbits 1\nline vty 0 4\n login\n!\n!\nend\n",
                     "system_id": "FTX0945W0MY"
                 },
                 "symbol": ":/symbols/router.svg",
@@ -2064,8 +2076,8 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_type": null,
+                "console": 5014,
+                "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
                 "label": {
@@ -2140,8 +2152,8 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_type": null,
+                "console": 5020,
+                "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
                 "label": {
@@ -2216,8 +2228,8 @@
             },
             {
                 "compute_id": "local",
-                "console": null,
-                "console_type": null,
+                "console": 5021,
+                "console_type": "telnet",
                 "first_port_name": null,
                 "height": 32,
                 "label": {
@@ -2292,7 +2304,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5020,
+                "console": 5022,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -2308,10 +2320,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname PC1\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": -256,
@@ -2320,7 +2329,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5022,
+                "console": 5024,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -2336,10 +2345,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname PC3\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": -132,
@@ -2348,7 +2354,7 @@
             },
             {
                 "compute_id": "local",
-                "console": 5024,
+                "console": 5026,
                 "console_type": "telnet",
                 "first_port_name": null,
                 "height": 59,
@@ -2364,10 +2370,7 @@
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
-                "properties": {
-                    "startup_script": "set pcname PC4\r\n",
-                    "startup_script_path": "startup.vpc"
-                },
+                "properties": {},
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "width": 65,
                 "x": -5,
@@ -2377,5 +2380,7 @@
         ]
     },
     "type": "topology",
-    "version": "2.0.3"
+    "variables": null,
+    "version": "2.1.11",
+    "zoom": 71
 }
