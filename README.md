@@ -1,5 +1,13 @@
 # wan_magic
-This is a WAN that I created to practice for the CCNP ROUTE exam. Maybe it will help someone else.
+This is a WAN that I created to practice for the CCNP ROUTE exam. Maybe it will help someone else along the way.
+
+11/10/2018
+----------
+DMVPN has been introduced into the lab. HQ is the DMVPN hub. Spokes are found at the edge of ASNs 3 and 4. The DMVPN address space is 10.222.222.0/29. Spokes will build VPN tunnels to each other dynamically. Unfortunately, I haven't figured out how to get remote access to each LAN on the other side of the spoke routers.
+
+There are redundant IPSec connections between the 10.15 subnets in ASN 4. I'm looking for a better approach to this.
+
+My next move is to get DMVPN remote access working. Later, I'll introduce IPv6.  
 
 10/21/2018
 ----------
