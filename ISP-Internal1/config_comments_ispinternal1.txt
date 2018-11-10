@@ -1,0 +1,77 @@
+ISP-Internal-1#show run
+Building configuration...
+
+Current configuration : 2355 bytes
+!
+! Last configuration change at 18:07:07 UTC Mon Aug 20 2018
+!
+version 15.2
+service timestamps debug datetime msec
+service timestamps log datetime msec
+!
+hostname ISP-Internal-1
+!
+boot-start-marker
+boot-end-marker
+!
+!
+!
+interface GigabitEthernet1/0                                        #Uplink to ISP-Oklahoma (OSPF RID 5.5.5.5). OSPF is enabled (area 1).
+ ip ospf dead-interval 60                                           #OSPF timers modified to reduce CPU overhead on my PC. OSPF priority 
+ ip ospf hello-interval 30                                          #set to near-max; wins the election to be designated router for area 1.
+ ip ospf priority 253
+ ip ospf 1 area 1
+ negotiation auto
+!
+!
+interface Serial2/1                                                 #Point-to-point serial link to ISP-Houston.
+ ip address 10.0.0.2 255.255.255.252                                #"serial restart-delay 0" is populated automatically by IOS.
+ ip hello-interval eigrp 100 30                                     
+ ip hold-time eigrp 100 60
+ serial restart-delay 0
+!
+interface Serial2/2                                                 #Point-to-point link to ISP-Florida
+ ip address 10.0.0.9 255.255.255.252
+ ip ospf dead-interval 60
+ ip ospf hello-interval 30
+ serial restart-delay 0
+!
+!
+router eigrp 100                                                             #EIGRP ASN 100 configuration. EIGRP is instructed to
+ network 10.0.0.0 0.0.0.3                                                    #redistribute OSPF routes with specified metrics. 
+ redistribute ospf 1 metric 1500 1 255 1 1500 route-map ospf>eigrp           #The "ospf>eigrp" route map blocks certain traffic. See further.
+!
+router ospf 1                                                                #OSPF area 1 configuration. Sets RID to 3.3.3.3.
+ router-id 3.3.3.3                                                           #Redistributes EIGRP routes into OSPF. Another
+ redistribute eigrp 100 subnets route-map eigrp>ospf                         #route map is configured here. See further.
+ network 10.0.0.8 0.0.0.3 area 1
+!
+!
+!
+ip route 70.164.65.64 255.255.255.252 Serial2/1 10.0.0.1                     #Static routes for VPN availability in case the virtual link
+ip route 172.20.0.0 255.255.255.0 GigabitEthernet1/0 10.0.0.18               #between 5.5.5.5 and 1.1.1.1 fails. I forgot one for the
+ip route 172.20.1.0 255.255.255.0 GigabitEthernet1/0 10.0.0.18               #172.20.2.0 subnet. Whoops.
+!
+!
+!
+!                                                                            #I've order-numbered the route map configurations for the sake of coherence.
+!                                                                            #This is NOT the order in which they are actually configured! (The numbers after 
+!                                                                            #"deny" and "permit" are sequence numbers)
+!
+!
+route-map eigrp>ospf deny 10                                                 #(3) Blocks redistribution of already-redistributed EIGRP routes         
+ match tag 11
+!
+route-map eigrp>ospf permit 20                                               #(1) EIGRP routes that are redistributed into OSPF are tagged with a value of 22
+ set tag 22
+!
+route-map ospf>eigrp deny 10                                                 #(4) Blocks redistribution of already-redistributed OSPF routes
+ match tag 22
+!
+route-map ospf>eigrp permit 20                                               #(2) OSPF routes that are redistributed into EIGRP are tagged with a value of 11
+ set tag 11
+!
+!
+!
+!
+end
