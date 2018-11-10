@@ -1,0 +1,21 @@
+Nov 10 13:38:16.330 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 13:38:16.331 HYPERVISOR: Started on TCP port = 57972.
+Nov 10 13:38:16.807 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 13:38:16.808 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips 
+Nov 10 13:38:16.808 GENERAL: working_dir=C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips
+Nov 10 13:38:16.808 HYPERVISOR: exec_cmd: ethsw create Hick-Switch 
+Nov 10 13:38:27.747 HYPERVISOR: exec_cmd: nio create_udp udp-5dcc4d50-dcfe-4243-a436-1d778f949501 10099 127.0.0.1 10098 
+Nov 10 13:38:27.748 HYPERVISOR: exec_cmd: ethsw add_nio Hick-Switch udp-5dcc4d50-dcfe-4243-a436-1d778f949501 
+Nov 10 13:38:27.751 HYPERVISOR: exec_cmd: ethsw set_access_port Hick-Switch udp-5dcc4d50-dcfe-4243-a436-1d778f949501 10 
+Nov 10 13:38:27.845 HYPERVISOR: exec_cmd: nio create_udp udp-fdb55342-8e06-4c9f-9a68-db9769e6456e 10102 127.0.0.1 10103 
+Nov 10 13:38:27.846 HYPERVISOR: exec_cmd: ethsw add_nio Hick-Switch udp-fdb55342-8e06-4c9f-9a68-db9769e6456e 
+Nov 10 13:38:27.856 HYPERVISOR: exec_cmd: ethsw set_access_port Hick-Switch udp-fdb55342-8e06-4c9f-9a68-db9769e6456e 10 
+Nov 10 13:38:28.523 HYPERVISOR: exec_cmd: nio create_udp udp-d424e426-ca16-4f46-83e5-a313d4be9f21 10107 127.0.0.1 10106 
+Nov 10 13:38:28.524 HYPERVISOR: exec_cmd: ethsw add_nio Hick-Switch udp-d424e426-ca16-4f46-83e5-a313d4be9f21 
+Nov 10 13:38:28.537 HYPERVISOR: exec_cmd: ethsw set_access_port Hick-Switch udp-d424e426-ca16-4f46-83e5-a313d4be9f21 10 
+Nov 10 13:38:28.647 HYPERVISOR: exec_cmd: nio create_udp udp-d1f4559c-1d32-4de4-b489-feb3e15bfc3f 10111 127.0.0.1 10110 
+Nov 10 13:38:28.647 HYPERVISOR: exec_cmd: ethsw add_nio Hick-Switch udp-d1f4559c-1d32-4de4-b489-feb3e15bfc3f 
+Nov 10 13:38:28.663 HYPERVISOR: exec_cmd: ethsw set_access_port Hick-Switch udp-d1f4559c-1d32-4de4-b489-feb3e15bfc3f 10 
+Nov 10 13:38:28.771 HYPERVISOR: exec_cmd: nio create_udp udp-bbc6c2e3-1b22-46f4-ba3c-74f7d0bbd980 10115 127.0.0.1 10114 
+Nov 10 13:38:28.772 HYPERVISOR: exec_cmd: ethsw add_nio Hick-Switch udp-bbc6c2e3-1b22-46f4-ba3c-74f7d0bbd980 
+Nov 10 13:38:28.789 HYPERVISOR: exec_cmd: ethsw set_access_port Hick-Switch udp-bbc6c2e3-1b22-46f4-ba3c-74f7d0bbd980 10 
