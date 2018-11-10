@@ -1,0 +1,41 @@
+Nov 10 13:38:15.765 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 13:38:15.766 HYPERVISOR: Started on TCP port = 57965.
+Nov 10 13:38:16.245 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 13:38:16.246 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips 
+Nov 10 13:38:16.246 GENERAL: working_dir=C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips
+Nov 10 13:38:16.246 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips\50e53a6f-acad-4e75-add7-65c546ed8b7a 
+Nov 10 13:38:16.246 GENERAL: working_dir=C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips\50e53a6f-acad-4e75-add7-65c546ed8b7a
+Nov 10 13:38:16.247 HYPERVISOR: exec_cmd: vm create Frame-Relay-Switch 14 c7200 
+Nov 10 13:38:16.271 VM: VM Frame-Relay-Switch created.
+Nov 10 13:38:16.272 HYPERVISOR: exec_cmd: vm set_con_tcp_port Frame-Relay-Switch 5019 
+Nov 10 13:38:16.272 HYPERVISOR: exec_cmd: c7200 get_mac_addr Frame-Relay-Switch 
+Nov 10 13:38:16.272 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.272 HYPERVISOR: exec_cmd: vm slot_add_binding Frame-Relay-Switch 0 0 C7200-IO-FE 
+Nov 10 13:38:16.273 HYPERVISOR: exec_cmd: vm set_disk0 Frame-Relay-Switch 0 
+Nov 10 13:38:16.273 HYPERVISOR: exec_cmd: vm set_exec_area Frame-Relay-Switch 64 
+Nov 10 13:38:16.273 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.274 HYPERVISOR: exec_cmd: vm set_idle_pc Frame-Relay-Switch 0x61d99154 
+Nov 10 13:38:16.275 HYPERVISOR: exec_cmd: vm set_ios Frame-Relay-Switch C:/Users/Hooteedee/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Nov 10 13:38:16.275 HYPERVISOR: exec_cmd: c7200 set_mac_addr Frame-Relay-Switch ca0e.2b24.0000 
+Nov 10 13:38:16.275 HYPERVISOR: exec_cmd: vm set_nvram Frame-Relay-Switch 512 
+Nov 10 13:38:16.276 HYPERVISOR: exec_cmd: vm set_ram Frame-Relay-Switch 512 
+Nov 10 13:38:16.276 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.276 HYPERVISOR: exec_cmd: vm slot_remove_binding Frame-Relay-Switch 0 0 
+Nov 10 13:38:16.277 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.277 HYPERVISOR: exec_cmd: vm slot_add_binding Frame-Relay-Switch 0 0 C7200-IO-2FE 
+Nov 10 13:38:16.277 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.277 HYPERVISOR: exec_cmd: vm slot_add_binding Frame-Relay-Switch 1 0 PA-GE 
+Nov 10 13:38:16.278 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:16.278 HYPERVISOR: exec_cmd: vm slot_add_binding Frame-Relay-Switch 2 0 PA-8T 
+Nov 10 13:38:24.248 HYPERVISOR: exec_cmd: nio create_udp udp-2b7aa3c6-aff5-44b7-bf8f-b06c5ea11639 10060 127.0.0.1 10061 
+Nov 10 13:38:24.796 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Frame-Relay-Switch 2 0 udp-2b7aa3c6-aff5-44b7-bf8f-b06c5ea11639 
+Nov 10 13:38:24.796 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:25.447 HYPERVISOR: exec_cmd: nio create_udp udp-060f73c4-d33e-41cc-8387-232ff142b1a0 10066 127.0.0.1 10067 
+Nov 10 13:38:25.450 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Frame-Relay-Switch 2 1 udp-060f73c4-d33e-41cc-8387-232ff142b1a0 
+Nov 10 13:38:25.450 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:26.101 HYPERVISOR: exec_cmd: nio create_udp udp-23244885-1ad1-4570-b9f8-92f11a16d623 10072 127.0.0.1 10073 
+Nov 10 13:38:26.103 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Frame-Relay-Switch 2 2 udp-23244885-1ad1-4570-b9f8-92f11a16d623 
+Nov 10 13:38:26.104 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 
+Nov 10 13:38:26.761 HYPERVISOR: exec_cmd: nio create_udp udp-a05530ee-8e5f-4746-bba6-b206abcd2b31 10078 127.0.0.1 10079 
+Nov 10 13:38:26.766 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Frame-Relay-Switch 2 3 udp-a05530ee-8e5f-4746-bba6-b206abcd2b31 
+Nov 10 13:38:26.767 HYPERVISOR: exec_cmd: vm get_status Frame-Relay-Switch 

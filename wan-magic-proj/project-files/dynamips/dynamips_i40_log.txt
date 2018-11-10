@@ -1,0 +1,18 @@
+Nov 10 13:38:17.989 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Nov 10 13:38:17.990 HYPERVISOR: Started on TCP port = 57984.
+Nov 10 13:38:18.465 HYPERVISOR: exec_cmd: hypervisor version 
+Nov 10 13:38:18.466 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips 
+Nov 10 13:38:18.466 GENERAL: working_dir=C:\Users\Hooteedee\Documents\GitHub\wan_magic\WAN Configuration\wan-magic-proj\project-files\dynamips
+Nov 10 13:38:18.466 HYPERVISOR: exec_cmd: ethsw create Ethernetswitch-1 
+Nov 10 13:38:28.886 HYPERVISOR: exec_cmd: nio create_udp udp-bd288363-e63c-41f8-9af4-c0d1e2d50c1a 10118 127.0.0.1 10119 
+Nov 10 13:38:28.886 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-bd288363-e63c-41f8-9af4-c0d1e2d50c1a 
+Nov 10 13:38:28.893 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-bd288363-e63c-41f8-9af4-c0d1e2d50c1a 1 
+Nov 10 13:38:29.008 HYPERVISOR: exec_cmd: nio create_udp udp-9f21ef36-67c0-4a4c-b525-5047409baae2 10123 127.0.0.1 10122 
+Nov 10 13:38:29.009 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-9f21ef36-67c0-4a4c-b525-5047409baae2 
+Nov 10 13:38:29.018 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-9f21ef36-67c0-4a4c-b525-5047409baae2 1 
+Nov 10 13:38:29.121 HYPERVISOR: exec_cmd: nio create_udp udp-da350f02-0776-4999-b9d1-d92830f3ac42 10125 127.0.0.1 10124 
+Nov 10 13:38:29.122 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-da350f02-0776-4999-b9d1-d92830f3ac42 
+Nov 10 13:38:29.123 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-da350f02-0776-4999-b9d1-d92830f3ac42 1 
+Nov 10 13:38:29.680 HYPERVISOR: exec_cmd: nio create_udp udp-dac5bbb4-3fa4-48ec-a2ad-549d86746b19 10140 127.0.0.1 10141 
+Nov 10 13:38:29.680 HYPERVISOR: exec_cmd: ethsw add_nio Ethernetswitch-1 udp-dac5bbb4-3fa4-48ec-a2ad-549d86746b19 
+Nov 10 13:38:29.690 HYPERVISOR: exec_cmd: ethsw set_access_port Ethernetswitch-1 udp-dac5bbb4-3fa4-48ec-a2ad-549d86746b19 1 
