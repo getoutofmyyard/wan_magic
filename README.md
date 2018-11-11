@@ -1,5 +1,5 @@
 # wan_magic
-This is a WAN that I created to practice for the CCNP ROUTE exam. Maybe it will help someone else along the way.
+This is a WAN that I created to practice for the CCNP ROUTE exam. Maybe it will help someone else along the way. After opening the project, be sure to import the most recent configurations into their respective devices.
 
 11/10/2018
 ----------
