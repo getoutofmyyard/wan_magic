@@ -6,7 +6,7 @@ Current configurations include:
   * Dual-hub DMVPN clouds for IPv4 and IPv6
   * Frame relay
   * PPPoE
-  * Classic and named EIGRP, EIGROv6, OSPFv3, MP-BGP
+  * Classic and named EIGRP, EIGRPv6, OSPFv3, MP-BGP
   * IPv6 over IPv4 tunnels
   * DHCP relay for IPv4 and IPv6 (Stateful IPv6 DHCP requires a VM to test. VPCS only supports SLAAC.)
   * Route maps, prefix lists, route summarization, route filtering, ACLs
