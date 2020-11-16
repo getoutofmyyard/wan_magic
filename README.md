@@ -1,20 +1,28 @@
 # wan_magic
 
-This is a lab that I made in my free time. See the topology diagram (topology.png) for more info.
+This is a lab created for CCIE Enterprise training.
 
-Current configurations include:
-  * Dual-hub DMVPN clouds for IPv4 and IPv6
-  * Frame relay
-  * PPPoE
-  * Classic and named EIGRP, EIGRPv6, OSPFv3, MP-BGP
-  * IPv6 over IPv4 tunnels
-  * DHCP relay for IPv4 and IPv6 (Stateful IPv6 DHCP requires a VM to test. VPCS only supports SLAAC.)
-  * Route maps, prefix lists, route summarization, route filtering, ACLs
-  * NAT
-  * NetFlow
-  * SNMP
-  
- Upcoming configurations:
-  * NAT64
-  * Infrastructure ACLs
-  * 6-to-4 tunnels
+Images required:
+
+Cisco IOSv L3  - vios-adventerprisek9-m.vmdk.SPA.156-2.T
+Cisco IOSv L2  - vios_l2-adventerprisek9-m.03.2017.qcow2
+Cisco NX-OS 9k - nxosv.9.3.1.qcow2
+
+Technologies used:
+
+* MPLS L3VPN with LDP
+* BGP
+    * Route reflectors
+    * Conditional advertisement
+    * Aggregation
+    * Route injection
+    * AS-Path access lists
+    * Communities
+    * Route-maps
+    * IPv4, VPNv4, and VRF address families
+* EIGRP
+* OSPF
+* IS-IS
+* Dual-Hub DMVPN (IKEv2 + IPSec)
+* vPC
+* HSRP
