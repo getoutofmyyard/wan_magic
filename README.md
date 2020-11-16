@@ -4,9 +4,9 @@ This is a lab created for CCIE Enterprise training.
 
 Images required:
 
-Cisco IOSv L3  - vios-adventerprisek9-m.vmdk.SPA.156-2.T
-Cisco IOSv L2  - vios_l2-adventerprisek9-m.03.2017.qcow2
-Cisco NX-OS 9k - nxosv.9.3.1.qcow2
+* Cisco IOSv L3  - vios-adventerprisek9-m.vmdk.SPA.156-2.T
+* Cisco IOSv L2  - vios_l2-adventerprisek9-m.03.2017.qcow2
+* Cisco NX-OS 9k - nxosv.9.3.1.qcow2
 
 Technologies used:
 
